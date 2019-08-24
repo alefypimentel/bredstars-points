@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="bredcoins-content">
+        <div class="bredcoin-item">
+          <label for="bredcoinInitial">BredCoin Inicial</label>
+          <input type="text" id="bredcoinInitial" />
+        </div>
+
+        <div class="bredcoin-item">
+          <label for="bredcoinVariation">Valorização</label>
+          <input type="text" id="bredcoinVariation" disabled />
+        </div>
+
+        <div class="bredcoin-item">
+          <label for="bredcoinNew">Nova Pontuação</label>
+          <input type="text" id="bredcoinNew" disabled />
+        </div>
+      </div>
+      <div class="point-content">
+        <h3 class="title">Desempenho do jogador</h3>
+
+        <ul class="palyer-rules-list">
+          <li class="player-rules-item">
+            <label for="g">g</label>
+            <input type="number" id="g" min="0" value="0" />
+          </li>
+
+          <li class="player-rules-item">
+            <label for="a">a</label>
+            <input type="number" id="a" min="0" value="0" />
+          </li>
+
+          <li class="player-rules-item">
+            <label for="fs">fs</label>
+            <input type="number" id="fs" min="0" value="0" />
+          </li>
+
+          <li class="player-rules-item">
+            <label for="fc">fc</label>
+            <input type="number" id="fc" min="0" value="0" />
+          </li>
+
+          <li class="player-rules-item">
+            <label for="ca">ca</label>
+            <input type="number" id="ca" min="0" value="0" />
+          </li>
+
+          <li class="player-rules-item">
+            <label for="cv">cv</label>
+            <input type="number" id="cv" min="0" value="0" />
+          </li>
+
+          <li class="player-rules-item">
+            <label for="gs">gs</label>
+            <input type="number" id="gs" min="0" value="0" />
+          </li>
+
+          <li class="player-rules-item">
+            <label for="dd">dd</label>
+            <input type="number" id="dd" min="0" value="0" />
+          </li>
+
+          <li class="player-rules-item">
+            <label for="dp">dp</label>
+            <input type="number" id="dp" min="0" value="0" />
+          </li>
+
+          <li class="player-rules-item">
+            <label for="gc">gc</label>
+            <input type="number" id="gc" min="0" value="0" />
+          </li>
+
+          <li class="player-rules-item">
+            <label for="win">v</label>
+            <select name="win" id="win">
+              <option value="0">Não</option>
+              <option value="1">Sim</option>
+            </select>
+          </li>
+        </ul>
+
+        <div class="point">Pontuação: <span id="point"></span></div>
+      </div>
+
+      <button onclick="calcPoints();">Pontos</button>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/points.js"></script>
+  </body>
+</html>
